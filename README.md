@@ -1,1 +1,2 @@
-This API to try Lumen Laravel
+This API is an attempt to understand how Lumen works.
+
