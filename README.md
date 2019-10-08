@@ -1,1 +1,1 @@
-# for-fun-api-lumen
+This API to try Lumen Laravel
