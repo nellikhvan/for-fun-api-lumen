@@ -11,6 +11,10 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->group(['prefix'=>'api/v1'], function() use($router){
+	$router->get('/games', 'GameController@index');
+	$router->post('/game', 'GameController@create');
+	$router->get('/game/{id}', 'GameController@show');
+	$router->put('/game/{id}', 'GameController@update');
+	$router->delete('/game/{id}', 'GameController@destroy');
 });
